@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "examplemod:gelore"
+    },
+    {
+      "item": "examplemod:gelore"
+    },
+    {
+      "item": "examplemod:gelore"
+    },
+    {
+      "item": "examplemod:gelore"
+    },
+    {
+      "item": "examplemod:gelore"
+    },
+    {
+      "item": "examplemod:gelore"
+    }
+  ],
+  "result":
+  {
+    "item": "examplemod:structuregel",
+    "count": 3
+  }
+}

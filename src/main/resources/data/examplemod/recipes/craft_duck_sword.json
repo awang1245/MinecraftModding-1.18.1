@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "examplemod:sushi"
+    },
+    {
+      "item": "examplemod:sushi"
+    }
+  ],
+  "result":
+  {
+    "item": "examplemod:shubaduck",
+    "count": 1
+  }
+}
