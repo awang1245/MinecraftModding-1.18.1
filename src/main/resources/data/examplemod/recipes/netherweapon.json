@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "examplemod:withercore"
+    },
+    {
+      "item": "minecraft:netherite_sword"
+    }
+  ],
+  "result":
+  {
+    "item": "examplemod:netherweapon",
+    "count": 1
+  }
+}

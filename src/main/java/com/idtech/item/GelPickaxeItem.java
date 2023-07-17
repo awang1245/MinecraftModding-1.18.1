@@ -17,7 +17,7 @@ import net.minecraftforge.common.ForgeTier;
 public class GelPickaxeItem extends PickaxeItem {
 
     //instance of a tool item has a Tool tier, damage value, and attack speed value
-    private static final Properties properties = new Item.Properties().tab(CreativeModeTab.TAB_MISC);
+    private static final Properties properties = new Item.Properties().tab(CreativeModeTab.TAB_TOOLS);
 
     //to decide the stats for the gel pickaxe, create a tier (like wood, stone, iron, diamond),
     // which has stats for

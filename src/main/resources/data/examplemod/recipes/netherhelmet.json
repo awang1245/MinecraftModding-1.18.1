@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "examplemod:witheressence"
+    },
+    {
+      "item": "minecraft:netherite_helmet"
+    }
+  ],
+  "result":
+  {
+    "item": "examplemod:netherhelmet",
+    "count": 1
+  }
+}

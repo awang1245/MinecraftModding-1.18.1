@@ -10,7 +10,7 @@ import net.minecraftforge.common.ForgeTier;
 
 public class GelHoeItem extends HoeItem {
 
-    private static final Properties properties = new Item.Properties().tab(CreativeModeTab.TAB_MISC);
+    private static final Properties properties = new Item.Properties().tab(CreativeModeTab.TAB_TOOLS);
 
     public static Tier tier = new ForgeTier(1, 150, 1.0F, 2.0F,
             5, null, () -> {return Ingredient.of(ItemMod.STRUCTURE_GEL);});

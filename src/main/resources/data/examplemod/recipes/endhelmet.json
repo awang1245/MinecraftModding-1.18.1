@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "examplemod:dragonsclaw"
+    },
+    {
+      "item": "minecraft:netherite_helmet"
+    }
+  ],
+  "result":
+  {
+    "item": "examplemod:endhelmet",
+    "count": 1
+  }
+}

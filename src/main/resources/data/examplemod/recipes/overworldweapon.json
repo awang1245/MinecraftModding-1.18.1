@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "examplemod:naturesheart"
+    },
+    {
+      "item": "minecraft:netherite_sword"
+    }
+  ],
+  "result":
+  {
+    "item": "examplemod:overworldweapon",
+    "count": 1
+  }
+}

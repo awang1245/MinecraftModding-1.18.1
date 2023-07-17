@@ -14,7 +14,7 @@ import net.minecraftforge.common.ForgeTier;
 
 public class GelSwordItem extends SwordItem {
 
-    private static final Properties properties = new Item.Properties().tab(CreativeModeTab.TAB_MISC);
+    private static final Properties properties = new Item.Properties().tab(CreativeModeTab.TAB_COMBAT);
 
     public static Tier tier = new ForgeTier(1, 150, 1.6F, 8.0F,
             5, null, () -> {return Ingredient.of(ItemMod.STRUCTURE_GEL);});

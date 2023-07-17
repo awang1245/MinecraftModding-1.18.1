@@ -31,5 +31,16 @@
   "item.examplemod.firecrystalchest": "Firecrystal Chest",
   "item.examplemod.firecrystallegs": "Firecrystal Legs",
   "item.examplemod.firecrystalboots": "Firecrystal Boots",
-  "item.examplemod.goggles": "X-Ray Goggles"
+  "item.examplemod.goggles": "X-Ray Goggles",
+  "item.examplemod.endweapon": "End Weapon",
+  "item.examplemod.endhelmet": "End Helmet",
+  "item.examplemod.netherhelmet": "Nether Helmet",
+  "item.examplemod.netherweapon": "Nether Sword",
+  "item.examplemod.overworldhelmet": "Overworld Helmet",
+  "item.examplemod.overworldweapon": "Overworld Weapon",
+  "item.examplemod.witheressence": "Wither Essence",
+  "item.examplemod.dragonsclaw": "Dragon's Claw",
+  "item.examplemod.guardianspikes": "Guardian Spikes",
+  "item.examplemod.withercore": "Wither Core",
+  "item.examplemod.naturesheart": "Nature's Heart"
 }

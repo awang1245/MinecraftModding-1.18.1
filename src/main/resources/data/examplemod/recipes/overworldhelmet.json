@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "examplemod:guardianspikes"
+    },
+    {
+      "item": "minecraft:netherite_helmet"
+    }
+  ],
+  "result":
+  {
+    "item": "examplemod:overworldhelmet",
+    "count": 1
+  }
+}

@@ -23,8 +23,17 @@ public class ItemMod {
     public static final Item STRUCTURE_GEL = ItemUtils.buildBasicItem("structuregel", CreativeModeTab.TAB_MISC);
     public static final Item GEL_ORE = ItemUtils.buildBasicItem("gelore", CreativeModeTab.TAB_MISC);
     public static final Item PERI_CRYSTAL = ItemUtils.buildBasicItem("pericrystal", CreativeModeTab.TAB_MISC);
+    public static final Item WITHER_CORE = ItemUtils.buildBasicItem("withercore", CreativeModeTab.TAB_MATERIALS);
+    public static final Item NATURES_HEART = ItemUtils.buildBasicItem("naturesheart", CreativeModeTab.TAB_MATERIALS);
+    public static final Item WITHER_ESSENCE = ItemUtils.buildBasicItem("witheressence", CreativeModeTab.TAB_MATERIALS);
+    public static final Item DRAGONS_CLAW = ItemUtils.buildBasicItem("dragonsclaw", CreativeModeTab.TAB_MATERIALS);
+    public static final Item GUARDIAN_SPIKES = ItemUtils.buildBasicItem("guardianspikes", CreativeModeTab.TAB_MATERIALS);
 
     //FOODS
+    //hunger in half food icons
+    //saturation: time it takes to get hungry again
+    //effect: mobeffectinstance: 2nd arg is duration in milliseconds, 3rd arg is amplifier how powerful effect is
+    //last arg is probability effect happens
     public static FoodProperties yummyFood = (new FoodProperties.Builder().nutrition(5).saturationMod(1.4f)
             .effect(new MobEffectInstance(MobEffects.REGENERATION, 1000, 1), 0.5f).alwaysEat().build());
     public static Item yummyFoodItem = ItemUtils.buildFoodItem("yummyfood", yummyFood);
@@ -46,6 +55,12 @@ public class ItemMod {
         event.getRegistry().register(STRUCTURE_GEL);
         event.getRegistry().register(GEL_ORE);
         event.getRegistry().register(PERI_CRYSTAL);
+        event.getRegistry().register(STRUCTURE_GEL);
+        event.getRegistry().register(WITHER_CORE);
+        event.getRegistry().register(NATURES_HEART);
+        event.getRegistry().register(WITHER_ESSENCE);
+        event.getRegistry().register(DRAGONS_CLAW);
+        event.getRegistry().register(GUARDIAN_SPIKES);
 
         // ITEMS
         event.getRegistry().register(TeleportRodItem.INSTANCE);
@@ -60,6 +75,9 @@ public class ItemMod {
         event.getRegistry().register(DuckSword.INSTANCE);
         event.getRegistry().register(ZooSwordItem.INSTANCE);
         event.getRegistry().register(ExplodingSwordItem.INSTANCE);
+        event.getRegistry().register(EndWeapon.INSTANCE);
+        event.getRegistry().register(NetherWeapon.INSTANCE);
+        event.getRegistry().register(OverWorldWeapon.INSTANCE);
 
         // FOOD
         event.getRegistry().register(yummyFoodItem);
@@ -75,6 +93,9 @@ public class ItemMod {
         event.getRegistry().register(FireCrystalArmorItem.FIRE_CRYSTAL_LEGS);
         event.getRegistry().register(FireCrystalArmorItem.FIRE_CRYSTAL_BOOTS);
         event.getRegistry().register(GogglesItem.GOGGLES);
+        event.getRegistry().register(EndHelmet.INSTANCE);
+        event.getRegistry().register(NetherHelmet.INSTANCE);
+        event.getRegistry().register(OverworldHelmet.INSTANCE);
 
         //PROJECTILES
 

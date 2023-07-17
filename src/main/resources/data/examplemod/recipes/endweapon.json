@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:dragon_egg"
+    },
+    {
+      "item": "minecraft:netherite_sword"
+    }
+  ],
+  "result":
+  {
+    "item": "examplemod:endweapon",
+    "count": 1
+  }
+}
