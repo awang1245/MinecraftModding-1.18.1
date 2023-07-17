@@ -78,6 +78,7 @@ public class ItemMod {
         event.getRegistry().register(EndWeapon.INSTANCE);
         event.getRegistry().register(NetherWeapon.INSTANCE);
         event.getRegistry().register(OverWorldWeapon.INSTANCE);
+        event.getRegistry().register(OverpoweredPickaxeItem.INSTANCE);
 
         // FOOD
         event.getRegistry().register(yummyFoodItem);
