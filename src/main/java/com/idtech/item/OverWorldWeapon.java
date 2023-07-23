@@ -35,11 +35,11 @@ public class OverWorldWeapon extends SwordItem {
     @Override
     public void onCraftedBy(ItemStack stack, Level level, Player playerin){
         //bane of arthropods
-        stack.enchant(Enchantment.byId(18),5);
+        stack.enchant(Enchantment.byId(22),5);
         //smite
-        stack.enchant(Enchantment.byId(17),5);
+        stack.enchant(Enchantment.byId(13),5);
         //looting
-        stack.enchant(Enchantment.byId(21),3);
+        stack.enchant(Enchantment.byId(17),3);
     }
 
     @Override

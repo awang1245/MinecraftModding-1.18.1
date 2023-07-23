@@ -1,6 +1,7 @@
 package com.idtech.item;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -15,19 +16,11 @@ import net.minecraftforge.common.ForgeTier;
 
 public class OverpoweredPickaxeItem extends PickaxeItem {
 
-    //instance of a tool item has a Tool tier, damage value, and attack speed value
-    private static final Properties properties = new Properties().tab(CreativeModeTab.TAB_TOOLS);
+    private static final Properties properties = new Properties().tab(ModTab.INSTANCE);
 
-    //to decide the stats for the gel pickaxe, create a tier (like wood, stone, iron, diamond),
-    // which has stats for
-    // mining lvl, durability (# of uses), mining speed (efficiency), damage (combination of
-    // value here and atk and speed values from instance), enchantability, repair ingredient
-
-    //params: item tier, attackDamage (bonus atk dmg amt), attackSpeed (bonus atk speed amt)
     public static Item INSTANCE = new OverpoweredPickaxeItem(Tiers.NETHERITE, 100, 100, properties)
             .setRegistryName(BaseMod.MODID, "overpoweredpickaxe");
 
-    //constructor
     public OverpoweredPickaxeItem(Tier tier, int attackDamageIn, float attackSpeedIn, Properties properties) {
         super(tier, attackDamageIn, attackSpeedIn, properties);
     }
@@ -41,7 +34,8 @@ public class OverpoweredPickaxeItem extends PickaxeItem {
 //                    if (x_offset == y_offset && y_offset == z_offset && z_offset == x_offset) {
 //                        continue;
 //                    }
-                    BlockPos newPos = new BlockPos(pos.getX() + x_offset, pos.getY() + y_offset, pos.getZ() + z_offset);
+                    BlockPos newPos = new BlockPos(pos.getX() + x_offset,
+                            pos.getY() + y_offset, pos.getZ() + z_offset);
                     if (levelIn.getBlockState(newPos).getBlock() != Blocks.BEDROCK) {
                         levelIn.destroyBlock(newPos, true);
                     }

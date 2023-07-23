@@ -1,5 +1,6 @@
 package com.idtech.item;
 
+import com.idtech.ModTab;
 import com.idtech.Utils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -12,7 +13,7 @@ import net.minecraft.world.level.Level;
 
 public class ZooSwordItem extends SwordItem {
 
-    private static final Properties properties = new Properties().tab(CreativeModeTab.TAB_COMBAT);
+    private static final Properties properties = new Properties().tab(ModTab.INSTANCE);
     public static Item INSTANCE = new ZooSwordItem(Tiers.WOOD, 2, 100, properties)
             .setRegistryName("zoosword");
 
@@ -33,7 +34,7 @@ public class ZooSwordItem extends SwordItem {
 
         EntityType[] animals = new EntityType[size];
 
-        animals[0] = EntityType.BAT;
+        animals[0] = EntityType.SKELETON;
         animals[1] = EntityType.DONKEY;
         animals[2] = EntityType.BEE;
         animals[3] = EntityType.BOAT;

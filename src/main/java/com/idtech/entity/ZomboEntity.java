@@ -1,6 +1,7 @@
 package com.idtech.entity;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import com.idtech.SoundHandler;
 import com.idtech.Utils;
 import net.minecraft.nbt.CompoundTag;
@@ -42,7 +43,7 @@ public class ZomboEntity extends Zombie {
                     .setRegistryName(BaseMod.MODID, "zombo"); //setRegistryName sets the name used internally
 
     //egg instance; allows us to set the color of the egg; 2nd arg is base color, 3rd is color of sports; 0x + hex code
-    public static Item EGG = EntityUtils.buildEntitySpawnEgg(TYPE, 0xb00101, 0xacbf1f);
+    public static Item EGG = EntityUtils.buildEntitySpawnEgg(TYPE, 0xb00101, 0xacbf1f, ModTab.INSTANCE);
 
     //to display code for entities, use go to > declaratons/usages
     public ZomboEntity(EntityType<? extends Zombie> type, Level level) {

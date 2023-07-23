@@ -1,9 +1,13 @@
 package com.idtech.item;
 
 import com.idtech.BaseMod;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.Level;
 
 import javax.annotation.Nullable;
 
@@ -24,8 +28,6 @@ public class CustomArmorItem extends ArmorItem {
         super(material, slot, properties);
     }
 
-
-
     @Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type){
@@ -34,4 +36,18 @@ public class CustomArmorItem extends ArmorItem {
         }
         return "examplemod:textures/models/armor/custom_armor_layer_1.png";
     }
+
+    @Override
+    public void onArmorTick(ItemStack itemStack, Level level, Player player) {
+        boolean helm = player.hasItemInSlot(EquipmentSlot.HEAD);
+        if (helm) {
+            player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 5, 1));
+            player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 5,1));
+            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 5,3));
+        }
+        super.onArmorTick(itemStack, level, player);
+    }
+
+
+
 }

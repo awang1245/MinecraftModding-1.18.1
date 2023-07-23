@@ -3,6 +3,7 @@ package com.idtech.block;
 import com.idtech.BaseMod;
 import com.idtech.Utils;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.player.Player;
@@ -46,8 +47,25 @@ public class CreeperSurpriseBlock extends Block {
 
         super.playerDestroy(level, player, pos, blockState, blockEntity, stack);
 
-        Creeper creeper = new Creeper(EntityType.CREEPER, level);
+        EntityType[] animals = new EntityType[10];
+
+        animals[0] = EntityType.SKELETON;
+        animals[1] = EntityType.ENDER_DRAGON;
+        animals[2] = EntityType.BEE;
+        animals[3] = EntityType.BOAT;
+        animals[4] = EntityType.CAVE_SPIDER;
+        animals[5] = EntityType.EXPERIENCE_ORB;
+        animals[6] = EntityType.MAGMA_CUBE;
+        animals[7] = EntityType.IRON_GOLEM;
+        animals[8] = EntityType.MOOSHROOM;
+        animals[9] = EntityType.FIREWORK_ROCKET;
+
+        int rand = level.random.nextInt(10);
+        Entity newAnimal = animals[rand].create(level);
+        Utils.spawnEntity(level, newAnimal, pos);
+
+        //Creeper creeper = new Creeper(EntityType.CREEPER, level);
         //1st param: level aka world entity is spawned in; 2nd: EntityType the entity to be spawned; 3rd: block position
-        Utils.spawnEntity(level, creeper, pos);
+        //Utils.spawnEntity(level, creeper, pos);
     }
 }

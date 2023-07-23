@@ -1,22 +1,25 @@
 package com.idtech.item;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import com.idtech.Utils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.KnockbackEnchantment;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeTier;
 
 public class EndWeapon extends SwordItem {
 
     public static Tier tier = new ForgeTier(1,0,12, 0.0f, 21, null, () ->{return Ingredient.of(EndWeapon.INSTANCE);});
-    private static Properties properties = new Properties().tab(CreativeModeTab.TAB_COMBAT);
+    private static Properties properties = new Properties().tab(ModTab.INSTANCE);
     //public static Item INSTANCE = new OverWorldWeapon(Tiers.NETHERITE, 3, (int)-2,  properties).setRegistryName(BaseMod.MODID, "endweapon");
     public static Item INSTANCE = new EndWeapon(tier, 7, -2,  properties).setRegistryName(BaseMod.MODID, "endweapon");
     //private boolean isCoolingDown = false;
@@ -60,9 +63,28 @@ public class EndWeapon extends SwordItem {
     @Override
     public void onCraftedBy(ItemStack stack, Level level, Player playerin){
         //knockback
-        stack.enchant(Enchantment.byId(19), 2);
+        stack.enchant(Enchantment.byId(15), 2);
         //sweeping edge
-        stack.enchant(Enchantment.byId(22), 3);
+        stack.enchant(Enchantment.byId(18), 3);
     }
+
+    /**
+     * id record
+     * channelling: 32
+     * efficiency: 19
+     * sharpness: 12
+     * fortune: 22
+     * sweeping edge: 18
+     * looting: 17
+     * unbreaking: 21
+     * fire aspect: 16
+     * silk touch: 20
+     * knockback: 15
+     * smite: 13
+     * soul speed: 11
+     * punch: 24
+     * lure: 28
+     * quick charge: 34
+     */
 }
 

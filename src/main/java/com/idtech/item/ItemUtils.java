@@ -43,8 +43,8 @@ public class ItemUtils {
      * @param food the food item itself.
      * @return
      */
-    public static Item buildFoodItem(String name, FoodProperties food){
-        return new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(food)).setRegistryName(BaseMod.MODID, name);
+    public static Item buildFoodItem(String name, FoodProperties food, CreativeModeTab group){
+        return new Item(new Item.Properties().tab(group).food(food)).setRegistryName(BaseMod.MODID, name);
     }
 
 

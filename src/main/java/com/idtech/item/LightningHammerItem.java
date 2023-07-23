@@ -1,6 +1,7 @@
 package com.idtech.item;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import com.idtech.Utils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -14,7 +15,7 @@ import net.minecraft.world.level.Level;
 public class LightningHammerItem extends Item {
 
     //static instance of Item to be registered in ItemMod
-    private static final Properties properties = new Properties().tab(CreativeModeTab.TAB_MISC);
+    private static final Properties properties = new Properties().tab(ModTab.INSTANCE);
     public static Item INSTANCE = new LightningHammerItem(properties).setRegistryName(BaseMod.MODID, "lightninghammer");
 
     //constructor tells the code how to create the item using the properties passed in

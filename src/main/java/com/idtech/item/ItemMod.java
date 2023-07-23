@@ -1,5 +1,6 @@
 package com.idtech.item;
 
+import com.idtech.ModTab;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -20,14 +21,14 @@ public class ItemMod {
      */
 
     //BASIC ITEMS
-    public static final Item STRUCTURE_GEL = ItemUtils.buildBasicItem("structuregel", CreativeModeTab.TAB_MISC);
-    public static final Item GEL_ORE = ItemUtils.buildBasicItem("gelore", CreativeModeTab.TAB_MISC);
+    public static final Item STRUCTURE_GEL = ItemUtils.buildBasicItem("structuregel", ModTab.INSTANCE);
+    public static final Item GEL_ORE = ItemUtils.buildBasicItem("gelore", ModTab.INSTANCE);
     public static final Item PERI_CRYSTAL = ItemUtils.buildBasicItem("pericrystal", CreativeModeTab.TAB_MISC);
-    public static final Item WITHER_CORE = ItemUtils.buildBasicItem("withercore", CreativeModeTab.TAB_MATERIALS);
-    public static final Item NATURES_HEART = ItemUtils.buildBasicItem("naturesheart", CreativeModeTab.TAB_MATERIALS);
-    public static final Item WITHER_ESSENCE = ItemUtils.buildBasicItem("witheressence", CreativeModeTab.TAB_MATERIALS);
-    public static final Item DRAGONS_CLAW = ItemUtils.buildBasicItem("dragonsclaw", CreativeModeTab.TAB_MATERIALS);
-    public static final Item GUARDIAN_SPIKES = ItemUtils.buildBasicItem("guardianspikes", CreativeModeTab.TAB_MATERIALS);
+    public static final Item WITHER_CORE = ItemUtils.buildBasicItem("withercore", ModTab.INSTANCE);
+    public static final Item NATURES_HEART = ItemUtils.buildBasicItem("naturesheart", ModTab.INSTANCE);
+    public static final Item WITHER_ESSENCE = ItemUtils.buildBasicItem("witheressence", ModTab.INSTANCE);
+    public static final Item DRAGONS_CLAW = ItemUtils.buildBasicItem("dragonsclaw", ModTab.INSTANCE);
+    public static final Item GUARDIAN_SPIKES = ItemUtils.buildBasicItem("guardianspikes", ModTab.INSTANCE);
 
     //FOODS
     //hunger in half food icons
@@ -36,11 +37,11 @@ public class ItemMod {
     //last arg is probability effect happens
     public static FoodProperties yummyFood = (new FoodProperties.Builder().nutrition(5).saturationMod(1.4f)
             .effect(new MobEffectInstance(MobEffects.REGENERATION, 1000, 1), 0.5f).alwaysEat().build());
-    public static Item yummyFoodItem = ItemUtils.buildFoodItem("yummyfood", yummyFood);
+    public static Item yummyFoodItem = ItemUtils.buildFoodItem("yummyfood", yummyFood, ModTab.INSTANCE);
 
     public static FoodProperties sushi = (new FoodProperties.Builder().nutrition(3).saturationMod(1.4f)
             .effect(new MobEffectInstance(MobEffects.GLOWING, 1000, 5), 0.5f).alwaysEat().build());
-    public static Item sushiFoodItem = ItemUtils.buildFoodItem("sushi", sushi);
+    public static Item sushiFoodItem = ItemUtils.buildFoodItem("sushi", sushi, ModTab.INSTANCE);
 
 
     /**
@@ -65,6 +66,7 @@ public class ItemMod {
         // ITEMS
         event.getRegistry().register(TeleportRodItem.INSTANCE);
         event.getRegistry().register(LightningHammerItem.INSTANCE);
+        event.getRegistry().register(KnockbackStick.INSTANCE);
 
         // TOOLS
         event.getRegistry().register(GelPickaxeItem.INSTANCE);
@@ -79,6 +81,7 @@ public class ItemMod {
         event.getRegistry().register(NetherWeapon.INSTANCE);
         event.getRegistry().register(OverWorldWeapon.INSTANCE);
         event.getRegistry().register(OverpoweredPickaxeItem.INSTANCE);
+        event.getRegistry().register(UraniumPickaxe.INSTANCE);
 
         // FOOD
         event.getRegistry().register(yummyFoodItem);

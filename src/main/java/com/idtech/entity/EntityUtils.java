@@ -15,8 +15,8 @@ public class EntityUtils {
      * @param secondaryColor
      * @return the spawn egg item with name and colors set.
      */
-    public static Item buildEntitySpawnEgg(EntityType type, int primaryColor, int secondaryColor){
-        return new SpawnEggItem(type, primaryColor, secondaryColor, new Item.Properties().tab(CreativeModeTab.TAB_MISC)).setRegistryName(type.getRegistryName() + "_egg");
+    public static Item buildEntitySpawnEgg(EntityType type, int primaryColor, int secondaryColor, CreativeModeTab group){
+        return new SpawnEggItem(type, primaryColor, secondaryColor, new Item.Properties().tab(group)).setRegistryName(type.getRegistryName() + "_egg");
     }
 
 

@@ -1,6 +1,7 @@
 package com.idtech.item;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -14,7 +15,7 @@ import net.minecraftforge.common.ForgeTier;
 public class NetherWeapon extends SwordItem {
 
     public static Tier tier = new ForgeTier(1,0,12, 0.0f, 22, null, () ->{return Ingredient.of(NetherWeapon.INSTANCE);});
-    private static Properties properties = new Properties().tab(CreativeModeTab.TAB_COMBAT);
+    private static Properties properties = new Properties().tab(ModTab.INSTANCE);
     //public static Item INSTANCE = new OverWorldWeapon(Tiers.NETHERITE, 3, (int)-2,  properties).setRegistryName(BaseMod.MODID, "netherweapon");
     public static Item INSTANCE = new NetherWeapon(tier, 7, -2,  properties).setRegistryName(BaseMod.MODID, "netherweapon");
 
@@ -26,9 +27,9 @@ public class NetherWeapon extends SwordItem {
     @Override
     public void onCraftedBy(ItemStack stack, Level level, Player playerin){
         //sharpness
-        stack.enchant(Enchantment.byId(16),5);
+        stack.enchant(Enchantment.byId(12),5);
         //fire aspect
-        stack.enchant(Enchantment.byId(20), 2);
+        stack.enchant(Enchantment.byId(16), 2);
     }
 
     @Override

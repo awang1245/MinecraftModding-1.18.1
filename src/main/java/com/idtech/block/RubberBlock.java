@@ -56,26 +56,10 @@ public class RubberBlock extends Block {
         //adds velocity to the entity to launch it up into the air
         //numbers in parentheses are x y z values; we want entity to be launched up, so we add velocity to y-axis
         //if you are interested in having the player be transported forward or sideways, you can edit the x and z values too
-        //entityIn.setDeltaMovement(0, 5, 0);
-        if (entityIn.getBlockY() <= posIn.getY() + 10 && entityIn.getBlockX() == posIn.getX()) {
-            ((LivingEntity) entityIn).addEffect(new MobEffectInstance(MobEffects.LEVITATION, 120, 1));
-        }
-//        if (entityIn.getBlockY() == posIn.getY() + 10 && entityIn.getBlockX() == posIn.getX()) {
-//            ((LivingEntity) entityIn).removeAllEffects();
-//            ((Player) entityIn).getAbilities().flying = true;
+        entityIn.setDeltaMovement(0, 5, 0);
+//        if (entityIn.getBlockY() <= posIn.getY() + 10 && entityIn.getBlockX() == posIn.getX()) {
+//            ((LivingEntity) entityIn).addEffect(new MobEffectInstance(MobEffects.LEVITATION, 120, 1));
 //        }
-//        if (entityIn.getBlockY() >= posIn.getY() + 10 && entityIn.getBlockX() >= posIn.getX()){
-//            ((Player) entityIn).getAbilities().flying = false;
-//        }
-    }
 
-//    @Override
-//    public void animateTick(BlockState blockState, Level level, BlockPos pos, Random random) {
-//        super.animateTick(blockState, level, pos, random);
-//        //serverLevel.getEntitiesOfClass(Player.class, serverLevel.getRandomPlayer().getBoundingBox().inflate(10.0f));
-//        Player player = level.getNearestPlayer();
-//        if (player.getBlockY() >= pos.getY() && player.getBlockX() == pos.getX()) {
-//            player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 10, 1));
-//        }
-//    }
+    }
 }

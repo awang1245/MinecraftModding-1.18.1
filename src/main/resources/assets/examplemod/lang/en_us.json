@@ -43,5 +43,14 @@
   "item.examplemod.guardianspikes": "Guardian Spikes",
   "item.examplemod.withercore": "Wither Core",
   "item.examplemod.naturesheart": "Nature's Heart",
-  "item.examplemod.overpoweredpickaxe": "Overpowered Pickaxe"
+  "item.examplemod.overpoweredpickaxe": "Overpowered Pickaxe",
+  "item.examplemod.knockbackstick": "Knockback Stick",
+  "item.examplemod.uraniumpickaxe": "Uranium Pickaxe",
+  "entity.examplemod.bulborb": "Bulborb",
+  "item.examplemod.bulborb_egg": "Bulborb Spawn Egg",
+  "entity.examplemod.dragon": "Dragon Wolf",
+  "item.examplemod.dragon_egg": "Dragon Wolf Spawn Egg",
+  "itemGroup.examplemod": "Modded",
+  "entity.examplemod.cherryvillager": "Sakura Sushi Chef",
+  "item.examplemod.cherryvillager_egg": "Sakura Sushi Chef Spawn Egg"
 }

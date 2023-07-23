@@ -1,6 +1,7 @@
 package com.idtech.item;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import com.idtech.Utils;
 import com.idtech.entity.ZomboEntity;
 import net.minecraft.core.BlockPos;
@@ -14,7 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeTier;
 
 public class DuckSword extends SwordItem {
-    private static final Properties properties = new Item.Properties().tab(CreativeModeTab.TAB_MISC);
+    private static final Properties properties = new Item.Properties().tab(ModTab.INSTANCE);
 
     public static Tier tier = new ForgeTier(4, 450, 12.0F, 15.0F,
             10, null, () -> {return Ingredient.of(ItemMod.STRUCTURE_GEL);});

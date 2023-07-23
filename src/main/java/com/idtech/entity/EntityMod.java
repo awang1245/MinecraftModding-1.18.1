@@ -13,18 +13,27 @@ public class EntityMod {
     public static void registerEntities(final RegistryEvent.Register<EntityType<?>> event){
 
         event.getRegistry().register(ZomboEntity.TYPE);
+        event.getRegistry().register(BulborbEntity.TYPE);
+        event.getRegistry().register(DragonWolfEntity.TYPE);
+        event.getRegistry().register(SushiTraderEntity.TYPE);
 
     }
     @SubscribeEvent
     public static void registerEntityEggs(final RegistryEvent.Register<Item> event) {
 
         event.getRegistry().register(ZomboEntity.EGG);
+        event.getRegistry().register(BulborbEntity.EGG);
+        event.getRegistry().register(DragonWolfEntity.EGG);
+        event.getRegistry().register(SushiTraderEntity.EGG);
 
     }
     @SubscribeEvent
     public static void entityRenderers(final EntityRenderersEvent.RegisterRenderers event){
 
         event.registerEntityRenderer(ZomboEntity.TYPE, ZomboRenderFactory.INSTANCE);
+        event.registerEntityRenderer(BulborbEntity.TYPE, BulborbRenderFactory.INSTANCE);
+        event.registerEntityRenderer(DragonWolfEntity.TYPE, DragonWolfRenderFactory.INSTANCE);
+        event.registerEntityRenderer(SushiTraderEntity.TYPE, SushiTraderRenderFactory.INSTANCE);
 
     }
 
@@ -34,6 +43,9 @@ public class EntityMod {
     public static void onAttributeCreate(EntityAttributeCreationEvent event) {
 
         event.put(ZomboEntity.TYPE, ZomboEntity.createAttributes().build());
+        event.put(BulborbEntity.TYPE, BulborbEntity.createAttributes().build());
+        event.put(DragonWolfEntity.TYPE, DragonWolfEntity.createAttributes().build());
+        event.put(SushiTraderEntity.TYPE, SushiTraderEntity.createAttributes().build());
 
     }
 
