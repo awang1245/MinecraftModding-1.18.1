@@ -16,6 +16,7 @@ public class EntityMod {
         event.getRegistry().register(BulborbEntity.TYPE);
         event.getRegistry().register(DragonWolfEntity.TYPE);
         event.getRegistry().register(SushiTraderEntity.TYPE);
+        event.getRegistry().register(SkeletonKingEntity.TYPE);
 
     }
     @SubscribeEvent
@@ -25,6 +26,7 @@ public class EntityMod {
         event.getRegistry().register(BulborbEntity.EGG);
         event.getRegistry().register(DragonWolfEntity.EGG);
         event.getRegistry().register(SushiTraderEntity.EGG);
+        event.getRegistry().register(SkeletonKingEntity.EGG);
 
     }
     @SubscribeEvent
@@ -34,11 +36,10 @@ public class EntityMod {
         event.registerEntityRenderer(BulborbEntity.TYPE, BulborbRenderFactory.INSTANCE);
         event.registerEntityRenderer(DragonWolfEntity.TYPE, DragonWolfRenderFactory.INSTANCE);
         event.registerEntityRenderer(SushiTraderEntity.TYPE, SushiTraderRenderFactory.INSTANCE);
+        event.registerEntityRenderer(SkeletonKingEntity.TYPE, SkeletonKingRenderFactory.INSTANCE);
 
     }
 
-    // this is different than in 1.16 but everything else is the same
-    // I do think this makes more sense than the other way but alas change is usually hard.
     @SubscribeEvent
     public static void onAttributeCreate(EntityAttributeCreationEvent event) {
 
@@ -46,6 +47,7 @@ public class EntityMod {
         event.put(BulborbEntity.TYPE, BulborbEntity.createAttributes().build());
         event.put(DragonWolfEntity.TYPE, DragonWolfEntity.createAttributes().build());
         event.put(SushiTraderEntity.TYPE, SushiTraderEntity.createAttributes().build());
+        event.put(SkeletonKingEntity.TYPE, SkeletonKingEntity.createAttributes().build());
 
     }
 
