@@ -1,0 +1,17 @@
+channelling: 32
+efficiency: 19
+sharpness: 12
+fortune: 22
+sweeping edge: 18
+looting: 17
+unbreaking: 21
+fire aspect: 16
+silk touch: 20
+knockback: 15
+smite: 13
+soul speed: 11
+punch: 24
+lure: 28
+quick charge: 34
+
+armor enchantment ids online are mostly accurate
