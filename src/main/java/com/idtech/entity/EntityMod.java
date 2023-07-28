@@ -17,6 +17,7 @@ public class EntityMod {
         event.getRegistry().register(DragonWolfEntity.TYPE);
         event.getRegistry().register(SushiTraderEntity.TYPE);
         event.getRegistry().register(SkeletonKingEntity.TYPE);
+        event.getRegistry().register(EvilRabbit.TYPE);
 
     }
     @SubscribeEvent
@@ -27,6 +28,7 @@ public class EntityMod {
         event.getRegistry().register(DragonWolfEntity.EGG);
         event.getRegistry().register(SushiTraderEntity.EGG);
         event.getRegistry().register(SkeletonKingEntity.EGG);
+        event.getRegistry().register(EvilRabbit.EGG);
 
     }
     @SubscribeEvent
@@ -37,6 +39,7 @@ public class EntityMod {
         event.registerEntityRenderer(DragonWolfEntity.TYPE, DragonWolfRenderFactory.INSTANCE);
         event.registerEntityRenderer(SushiTraderEntity.TYPE, SushiTraderRenderFactory.INSTANCE);
         event.registerEntityRenderer(SkeletonKingEntity.TYPE, SkeletonKingRenderFactory.INSTANCE);
+        event.registerEntityRenderer(EvilRabbit.TYPE, EvilRabbitRenderFactory.INSTANCE);
 
     }
 
@@ -48,6 +51,7 @@ public class EntityMod {
         event.put(DragonWolfEntity.TYPE, DragonWolfEntity.createAttributes().build());
         event.put(SushiTraderEntity.TYPE, SushiTraderEntity.createAttributes().build());
         event.put(SkeletonKingEntity.TYPE, SkeletonKingEntity.createAttributes().build());
+        event.put(EvilRabbit.TYPE, EvilRabbit.createAttributes().build());
 
     }
 

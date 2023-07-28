@@ -183,6 +183,11 @@ public class BaseMod {
             EnchantmentMod.registerEnchantments(event);
         }
 
+        @SubscribeEvent
+        public static void clientSetup(EntityRenderersEvent.RegisterLayerDefinitions event) {
+            event.registerLayerDefinition(EvilRabbitModel.LAYER_LOCATION, EvilRabbitModel::createBodyLayer);
+        }
+
     }
 }
 

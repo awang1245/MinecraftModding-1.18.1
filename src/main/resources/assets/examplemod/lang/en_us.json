@@ -52,5 +52,7 @@
   "item.examplemod.dragon_egg": "Dragon Wolf Spawn Egg",
   "itemGroup.examplemod": "Modded",
   "entity.examplemod.cherryvillager": "Sakura Sushi Chef",
-  "item.examplemod.cherryvillager_egg": "Sakura Sushi Chef Spawn Egg"
+  "item.examplemod.cherryvillager_egg": "Sakura Sushi Chef Spawn Egg",
+  "entity.examplemod.evilrabbit": "Evil Rabbit",
+  "item.examplemod.evilrabbit_egg": "Evil Rabbit Spawn Egg"
 }
