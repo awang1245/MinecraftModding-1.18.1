@@ -4,7 +4,10 @@ import com.idtech.BaseMod;
 import com.idtech.ModTab;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.animal.Rabbit;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 
@@ -17,5 +20,13 @@ public class EvilRabbit extends Rabbit {
 
     public EvilRabbit(EntityType<? extends Rabbit> entityIn, Level levelIn) {
         super(entityIn, levelIn);
+    }
+
+    public static AttributeSupplier.Builder createAttributes() {
+        return Monster.createMonsterAttributes()
+                .add(Attributes.MAX_HEALTH, 12)
+                .add(Attributes.MOVEMENT_SPEED, 5)
+                .add(Attributes.ATTACK_DAMAGE, 4)
+                .add(Attributes.FOLLOW_RANGE, 35);
     }
 }

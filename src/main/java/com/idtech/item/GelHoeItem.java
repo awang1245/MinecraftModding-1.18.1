@@ -1,6 +1,7 @@
 package com.idtech.item;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
@@ -10,7 +11,7 @@ import net.minecraftforge.common.ForgeTier;
 
 public class GelHoeItem extends HoeItem {
 
-    private static final Properties properties = new Item.Properties().tab(CreativeModeTab.TAB_TOOLS);
+    private static final Properties properties = new Item.Properties().tab(ModTab.INSTANCE);
 
     public static Tier tier = new ForgeTier(1, 150, 1.0F, 2.0F,
             5, null, () -> {return Ingredient.of(ItemMod.STRUCTURE_GEL);});

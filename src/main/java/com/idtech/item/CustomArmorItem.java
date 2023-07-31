@@ -1,6 +1,7 @@
 package com.idtech.item;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -13,7 +14,7 @@ import javax.annotation.Nullable;
 
 public class CustomArmorItem extends ArmorItem {
 
-    private static Properties properties = new Properties().tab(CreativeModeTab.TAB_COMBAT);
+    private static Properties properties = new Properties().tab(ModTab.INSTANCE);
 
     public static final Item CUSTOM_HELM = new CustomArmorItem(ArmorMaterials.NETHERITE, EquipmentSlot.HEAD,
             (properties)).setRegistryName(BaseMod.MODID, "customhelm");

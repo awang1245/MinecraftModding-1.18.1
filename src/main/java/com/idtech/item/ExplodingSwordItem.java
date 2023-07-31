@@ -1,6 +1,7 @@
 package com.idtech.item;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -10,7 +11,7 @@ import net.minecraft.world.level.Level;
 
 public class ExplodingSwordItem extends SwordItem {
 
-    private static final Properties properties = new Properties().tab(CreativeModeTab.TAB_MISC);
+    private static final Properties properties = new Properties().tab(ModTab.INSTANCE);
 
     public static Item INSTANCE = new ExplodingSwordItem(Tiers.NETHERITE, 3, 3,
            properties).setRegistryName(BaseMod.MODID, "explodingsword");

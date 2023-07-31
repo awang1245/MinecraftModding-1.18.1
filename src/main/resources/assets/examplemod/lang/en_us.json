@@ -54,5 +54,8 @@
   "entity.examplemod.cherryvillager": "Sakura Sushi Chef",
   "item.examplemod.cherryvillager_egg": "Sakura Sushi Chef Spawn Egg",
   "entity.examplemod.evilrabbit": "Evil Rabbit",
-  "item.examplemod.evilrabbit_egg": "Evil Rabbit Spawn Egg"
+  "item.examplemod.evilrabbit_egg": "Evil Rabbit Spawn Egg",
+  "item.examplemod.firesword": "Fire Sword",
+  "item.examplemod.vinebow": "Twisting Vine Bow",
+  "item.examplemod.bombarrow": "Bomb Arrow"
 }

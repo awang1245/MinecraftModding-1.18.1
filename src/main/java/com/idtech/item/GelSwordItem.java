@@ -1,6 +1,7 @@
 package com.idtech.item;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import com.idtech.Utils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -14,7 +15,7 @@ import net.minecraftforge.common.ForgeTier;
 
 public class GelSwordItem extends SwordItem {
 
-    private static final Properties properties = new Item.Properties().tab(CreativeModeTab.TAB_COMBAT);
+    private static final Properties properties = new Item.Properties().tab(ModTab.INSTANCE);
 
     public static Tier tier = new ForgeTier(1, 150, 1.6F, 8.0F,
             5, null, () -> {return Ingredient.of(ItemMod.STRUCTURE_GEL);});

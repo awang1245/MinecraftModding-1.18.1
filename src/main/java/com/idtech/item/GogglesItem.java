@@ -1,6 +1,7 @@
 package com.idtech.item;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -9,7 +10,7 @@ import javax.annotation.Nullable;
 
 public class GogglesItem extends ArmorItem {
 
-    private static Properties properties = new Properties().tab(CreativeModeTab.TAB_COMBAT);
+    private static Properties properties = new Properties().tab(ModTab.INSTANCE);
 
     public static final Item GOGGLES = new GogglesItem(ArmorMaterials.IRON, EquipmentSlot.HEAD,
             properties).setRegistryName(BaseMod.MODID, "goggles");

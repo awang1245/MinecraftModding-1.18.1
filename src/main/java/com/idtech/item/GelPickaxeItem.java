@@ -1,6 +1,7 @@
 package com.idtech.item;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import com.idtech.Utils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -17,7 +18,7 @@ import net.minecraftforge.common.ForgeTier;
 public class GelPickaxeItem extends PickaxeItem {
 
     //instance of a tool item has a Tool tier, damage value, and attack speed value
-    private static final Properties properties = new Item.Properties().tab(CreativeModeTab.TAB_TOOLS);
+    private static final Properties properties = new Item.Properties().tab(ModTab.INSTANCE);
 
     //to decide the stats for the gel pickaxe, create a tier (like wood, stone, iron, diamond),
     // which has stats for

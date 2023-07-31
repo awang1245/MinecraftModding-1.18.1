@@ -23,7 +23,7 @@ public class ItemMod {
     //BASIC ITEMS
     public static final Item STRUCTURE_GEL = ItemUtils.buildBasicItem("structuregel", ModTab.INSTANCE);
     public static final Item GEL_ORE = ItemUtils.buildBasicItem("gelore", ModTab.INSTANCE);
-    public static final Item PERI_CRYSTAL = ItemUtils.buildBasicItem("pericrystal", CreativeModeTab.TAB_MISC);
+    public static final Item PERI_CRYSTAL = ItemUtils.buildBasicItem("pericrystal", ModTab.INSTANCE);
     public static final Item WITHER_CORE = ItemUtils.buildBasicItem("withercore", ModTab.INSTANCE);
     public static final Item NATURES_HEART = ItemUtils.buildBasicItem("naturesheart", ModTab.INSTANCE);
     public static final Item WITHER_ESSENCE = ItemUtils.buildBasicItem("witheressence", ModTab.INSTANCE);
@@ -67,6 +67,7 @@ public class ItemMod {
         event.getRegistry().register(TeleportRodItem.INSTANCE);
         event.getRegistry().register(LightningHammerItem.INSTANCE);
         event.getRegistry().register(KnockbackStick.INSTANCE);
+        event.getRegistry().register(BombArrowItem.INSTANCE);
 
         // TOOLS
         event.getRegistry().register(GelPickaxeItem.INSTANCE);
@@ -82,6 +83,8 @@ public class ItemMod {
         event.getRegistry().register(OverWorldWeapon.INSTANCE);
         event.getRegistry().register(OverpoweredPickaxeItem.INSTANCE);
         event.getRegistry().register(UraniumPickaxe.INSTANCE);
+        event.getRegistry().register(FireSword.INSTANCE);
+        event.getRegistry().register(TwistingVineBow.INSTANCE);
 
         // FOOD
         event.getRegistry().register(yummyFoodItem);
