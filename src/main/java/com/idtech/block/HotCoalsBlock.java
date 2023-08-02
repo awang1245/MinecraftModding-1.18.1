@@ -1,6 +1,7 @@
 package com.idtech.block;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,7 +17,7 @@ public class HotCoalsBlock extends Block {
     private static BlockBehaviour.Properties properties = BlockBehaviour.Properties.of(Material.STONE);
 
     public static Block INSTANCE = new HotCoalsBlock(properties).setRegistryName(BaseMod.MODID, "hotcoals");
-    public static Item ITEM = BlockUtils.createBlockItem(INSTANCE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static Item ITEM = BlockUtils.createBlockItem(INSTANCE, ModTab.INSTANCE);
 
     //constructor
     public HotCoalsBlock(Properties properties) {

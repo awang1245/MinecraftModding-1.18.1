@@ -57,5 +57,9 @@
   "item.examplemod.evilrabbit_egg": "Evil Rabbit Spawn Egg",
   "item.examplemod.firesword": "Fire Sword",
   "item.examplemod.vinebow": "Twisting Vine Bow",
-  "item.examplemod.bombarrow": "Bomb Arrow"
+  "item.examplemod.bombarrow": "Bomb Arrow",
+  "block.examplemod.strawberryjelly": "Strawberry Jelly Block",
+  "item.examplemod.fancysauce": "Hot Sauce Infused with Creative Essence",
+  "item.examplemod.fireballwand": "Fire Ball Wand"
+
 }

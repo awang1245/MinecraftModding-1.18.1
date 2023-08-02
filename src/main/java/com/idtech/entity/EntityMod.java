@@ -1,5 +1,7 @@
 package com.idtech.entity;
 
+import com.idtech.item.ExplosionProjectile;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -40,6 +42,7 @@ public class EntityMod {
         event.registerEntityRenderer(SushiTraderEntity.TYPE, SushiTraderRenderFactory.INSTANCE);
         event.registerEntityRenderer(SkeletonKingEntity.TYPE, SkeletonKingRenderFactory.INSTANCE);
         event.registerEntityRenderer(EvilRabbit.TYPE, EvilRabbitRenderFactory.INSTANCE);
+        event.registerEntityRenderer(ExplosionProjectile.TYPE, (m) -> { return new ThrownItemRenderer<>(m, 1.0f, true);});
 
     }
 

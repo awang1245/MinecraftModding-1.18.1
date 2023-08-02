@@ -1,6 +1,7 @@
 package com.idtech.block;
 
 import com.idtech.BaseMod;
+import com.idtech.ModTab;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.CreativeModeTab;
@@ -17,7 +18,7 @@ public class AsphaltBlock extends Block {
 
     //two diff instances, one for the block itself and one for inventory
     public static Block INSTANCE = new AsphaltBlock(properties).setRegistryName(BaseMod.MODID, "asphalt");
-    public static Item ITEM = BlockUtils.createBlockItem(INSTANCE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static Item ITEM = BlockUtils.createBlockItem(INSTANCE, ModTab.INSTANCE);
 
     //constructor
     public AsphaltBlock(Properties properties) {

@@ -68,6 +68,8 @@ public class ItemMod {
         event.getRegistry().register(LightningHammerItem.INSTANCE);
         event.getRegistry().register(KnockbackStick.INSTANCE);
         event.getRegistry().register(BombArrowItem.INSTANCE);
+        event.getRegistry().register(GamemodeSwitchingFood.INSTANCE);
+        event.getRegistry().register(FireballWandItem.INSTANCE);
 
         // TOOLS
         event.getRegistry().register(GelPickaxeItem.INSTANCE);

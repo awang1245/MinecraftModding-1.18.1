@@ -85,6 +85,14 @@ public class EndWeapon extends SwordItem {
      * punch: 24
      * lure: 28
      * quick charge: 34
+     * flame: 25
+     * impaling: 30
+     * bane of anthropods: 14
+     * riptide: 31
+     * power: 23
+     * infinity: 26
+     * luck of the sea: 27
+     * loyalty: 29
      */
 }
 
