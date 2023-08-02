@@ -33,13 +33,6 @@ public class StrawberryJellyBlock extends Block {
     //madeline wants player to be shot forward if walk on it
 
     //stepon doesnt work in combo with noCollission
-//    @Override
-//    public void stepOn(Level levelIn, BlockPos posIn, BlockState blockStateIn, Entity entityIn) {
-//        super.stepOn(levelIn, posIn, blockStateIn, entityIn);
-//
-//        //adds velocity to propel entity forward
-//        entityIn.setDeltaMovement(10, 0, 0);
-//    }
 
     @Override
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
@@ -47,11 +40,20 @@ public class StrawberryJellyBlock extends Block {
             //if crouching, can walk through block, behaves like berry bush almost
             if (entity.isCrouching()) {
                 entity.makeStuckInBlock(state, new Vec3((double)0.8F, 0.75D, (double)0.8F));
-                //else player gets shot forward
+                //else player gets propelled forward in whatever direction they were moving in
             } else {
-                entity.setDeltaMovement(10, 0, 0);
+                if (entity.getDeltaMovement().x > 0) {
+                    entity.setDeltaMovement(5, 0, 0);
+                } else if (entity.getDeltaMovement().x < 0) {
+                    entity.setDeltaMovement(-5, 0, 0);
+                } else if (entity.getDeltaMovement().y > 0) {
+                    entity.setDeltaMovement(0, 5, 0);
+                } else if (entity.getDeltaMovement().z > 0) {
+                    entity.setDeltaMovement(0, 0, 5);
+                } else if (entity.getDeltaMovement().z < 0) {
+                    entity.setDeltaMovement(0, 0, -5);
+                }
             }
         }
-
     }
 }
