@@ -46,8 +46,6 @@ public class StrawberryJellyBlock extends Block {
                     entity.setDeltaMovement(5, 0, 0);
                 } else if (entity.getDeltaMovement().x < 0) {
                     entity.setDeltaMovement(-5, 0, 0);
-                } else if (entity.getDeltaMovement().y > 0) {
-                    entity.setDeltaMovement(0, 5, 0);
                 } else if (entity.getDeltaMovement().z > 0) {
                     entity.setDeltaMovement(0, 0, 5);
                 } else if (entity.getDeltaMovement().z < 0) {

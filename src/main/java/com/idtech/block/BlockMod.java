@@ -66,6 +66,7 @@ public class BlockMod {
         event.getRegistry().register(CreeperSurpriseBlock.ITEM);
         event.getRegistry().register(HotCoalsBlock.ITEM);
         event.getRegistry().register(StrawberryJellyBlock.ITEM);
+        event.getRegistry().register(TNTCannonBlock.ITEM);
 
     }
 
@@ -85,6 +86,7 @@ public class BlockMod {
         event.getRegistry().register(CreeperSurpriseBlock.INSTANCE);
         event.getRegistry().register(HotCoalsBlock.INSTANCE);
         event.getRegistry().register(StrawberryJellyBlock.INSTANCE);
+        event.getRegistry().register(TNTCannonBlock.INSTANCE);
 
     }
 }
